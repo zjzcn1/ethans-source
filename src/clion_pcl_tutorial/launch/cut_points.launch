@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="clion_pcl_tutorial" name="cut_points" type="cut_pointcloud">
+	<!--<remap from="cuted_pointcloud" to="velodyne_points"/>发布消息名-->
+	<!--<remap from="velodyne_points" to="velodyne_new"/>订阅消息名-->
+	</node>
+</launch>

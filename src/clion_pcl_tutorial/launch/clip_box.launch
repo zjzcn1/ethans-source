@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="clion_pcl_tutorial" name="clip_box" type="clip_box"/>
+    <rosparam command="load" file="$(find clion_pcl_tutorial)/param/clip_box.yaml"/>
+
+</launch>

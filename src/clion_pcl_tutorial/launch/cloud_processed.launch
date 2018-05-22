@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="clion_pcl_tutorial" name="clip_box" type="clip_box"/>
+    <rosparam command="load" file="$(find clion_pcl_tutorial)/param/clip_box.yaml"/>
+    <node pkg="clion_pcl_tutorial" name="plane_segmentation" type="plane_segmentation"/>
+    <node pkg="rviz" name="rviz" type="rviz" args="-d ~/.rviz/plane_segmentation.rviz"/>
+</launch>
